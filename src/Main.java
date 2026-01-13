@@ -1,13 +1,33 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  IO.println(String.format("Hello and welcome!"));
+    Scanner scanner = new Scanner(System.in);
+    String day = scanner.nextLine().toUpperCase();
 
-  for (int i = 1; i <= 5; i++) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    IO.println("i = " + i);
-  }
+    Days days = Days.valueOf(day);
+
+    switch (days) {
+        case MONDAY:
+            System.out.println(" Дуйшомбу куну Java болот ");
+            break;
+        case TUESDAY:
+            System.out.println(" Шейшемби куну session болот ");
+            break;
+        case WEDNESDAY:
+            System.out.println(" Шаршемби англис тил бар ");
+            break;
+        case THURSDAY:
+            System.out.println("Бейшемби зал ");
+        case FRIDAY:
+            System.out.println("Жума куну жумага барам ");
+        case SATURDAY:
+            System.out.println("Тапшырмаларды кайталоо ");
+        case SUNDAY:
+            System.out.println("Эс алуу ");
+            break;
+        default:
+
+
+    }
+
 }

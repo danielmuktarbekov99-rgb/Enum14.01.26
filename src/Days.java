@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
-
 public enum Days {
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY;
+
 }
